@@ -19,8 +19,8 @@ The uDMA controller requires a 1024-byte aligned control table for managing DMA 
 
 #### GPIO for ADC Monitoring:
 
-`` #define ADC_MONITOR_BASE GPIO_PORTD_BASE <br> 
-  #define ADC_MONITOR_GPIO GPIO_PIN_3```
+`#define ADC_MONITOR_BASE GPIO_PORTD_BASE`
+`#define ADC_MONITOR_GPIO GPIO_PIN_3`
 
 Configures a GPIO pin for monitoring ADC triggering/debugging.
 
