@@ -4,6 +4,8 @@ This document explains the implementation of an ADC (Analog-to-Digital Converter
 
 This feature is one of the computational components I built during my master's. The purpose of this module is to quickly read a thermopile that is being applied in an infrared interferometer environment.
 
+![Burst Mode SVG](images/ADC_DMA_BurstMode.svg)
+
 ## 1. Header File: ADC_DMA.h
 Purpose:
 This header file declares key macros, variables, and function prototypes for ADC and DMA-based burst mode sampling.
