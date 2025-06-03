@@ -1,6 +1,6 @@
 # Explanation of ADC DMA Integration in TM4C Microcontroller with FreeRTOS
 
-This document explains the implementation of an ADC (Analog-to-Digital Converter) with DMA (Direct Memory Access) integration using FreeRTOS on a Tiva C microcontroller. The setup enables efficient data acquisition triggered by external GPIO interrupts, leveraging DMA to offload data transfer and reduce CPU overhead.
+This document explains the implementation of an ADC (Analog-to-Digital Converter) with DMA (Direct Memory Access) integration using FreeRTOS on a Tiva C microcontroller. The setup enables efficient data acquisition triggered by external GPIO interrupts, from ADC buffer to UART TX buffer, leveraging DMA to offload data transfers and reduce CPU overhead.
 
 This feature is one of the computational components I built during my master's. The purpose of this module is to quickly read a thermopile that is being applied in an infrared interferometer environment.
 
@@ -19,8 +19,8 @@ The uDMA controller requires a 1024-byte aligned control table for managing DMA 
 
 #### GPIO for ADC Monitoring:
 
-` #define ADC_MONITOR_BASE GPIO_PORTD_BASE
-  #define ADC_MONITOR_GPIO GPIO_PIN_3`
+`` #define ADC_MONITOR_BASE GPIO_PORTD_BASE <br> 
+  #define ADC_MONITOR_GPIO GPIO_PIN_3```
 
 Configures a GPIO pin for monitoring ADC triggering/debugging.
 
